@@ -1,9 +1,20 @@
 <html>
   <head>
     <title>IdeaBox</title>
+    <%= js :foundation %>
+    <%= js :application %>
+    <%= css :application %>
   </head>
   <body>
-
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Top Bar Title </a> </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+      </li>
+    </ul>
+  </nav>
   <%= yield %>
 
   </body>
